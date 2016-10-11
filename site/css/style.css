@@ -1,0 +1,60 @@
+html{
+	height: 100%;
+	position: relative;
+}
+body{
+	font-family : Arial;
+	min-height: 100%;
+	position: relative;
+	background: url('../img/background.jpg') repeat 0 0 ;
+	z-index: -100;
+}
+.box {
+	overflow: hidden;
+	height: 300px;
+	width : 30px;
+	background-color: blue;
+	color: White;
+	font-size: 0;
+	position: relative;
+	outline: 1px solid black;
+	float: left;
+}
+.box span, .box div.boxContent span.closed{
+	font-weight: bold;
+	font-size: 30px;
+	position: absolute;
+	display: block;
+	white-space: nowrap;
+}
+
+.box span.open{
+	position: relative;
+	display: block;
+	white-space: normal;
+}
+
+.box .boxContent{
+	background: orange;
+	margin: 8% 30px;
+    overflow: auto;
+	padding: 5%;
+	text-align: justify;
+	font-size: 14px;
+}
+#admin{
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	background: White; 
+	border: 1px solid orange;
+	text-align: center;
+	color: orange;
+	text-decoration: none;
+}
+#admin:hover{
+	color: black;
+	border-color: black;
+}
